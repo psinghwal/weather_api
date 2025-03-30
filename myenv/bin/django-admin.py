@@ -1,4 +1,4 @@
-#!/home/ec2-user/environment/SCP CA1/Weather_Prediction/myenv/bin/python3
+#!/home/ec2-user/environment/SCP CA1/WeatherPredic/myenv/bin/python3
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

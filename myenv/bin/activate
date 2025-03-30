@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/ec2-user/environment/SCP CA1/Weather_Prediction/myenv"
+VIRTUAL_ENV="/home/ec2-user/environment/SCP CA1/WeatherPredic/myenv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
