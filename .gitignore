@@ -7,3 +7,4 @@ local_settings.py
  env
 .env
 db.sqlite3
+weather_api/key.py

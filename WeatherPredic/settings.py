@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'weather_api'
+    'weather_api',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -121,4 +122,4 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
-ALLOWED_HOSTS = ['cce05b6897534d78b03dfe1d321333ce.vfs.cloud9.eu-west-1.amazonaws.com']
+ALLOWED_HOSTS = ['cce05b6897534d78b03dfe1d321333ce.vfs.cloud9.eu-west-1.amazonaws.com','127.0.0.1']

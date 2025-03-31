@@ -1,5 +1,11 @@
 from django.shortcuts import render, redirect
 from weather_api.key import api_key
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
+from .models import CityWeather
+from django.http import JsonResponse
+
 import requests
 import math
 # from .models import Social
@@ -75,6 +81,11 @@ def result(request):
         return render(request, "weather_api/results.html", context)
     else:
     	return redirect('home')
+
+@api_view(['GET'])
+def get_all_weather(request):
+    data = list(CityWeather.objects.all().values('city', 'temperature'))
+    return JsonResponse(data, safe=False)
 
 
 # def social_links(request):
